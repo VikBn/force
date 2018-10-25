@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Table</title>
+</head>
+<body class="page">
+    <div class="page__wrap">
+
+      <div class="top__wrap">
+        <div class="container">
+          <div class="top__inner d-flex justify-content-space-between">
+            <div class="top__left col-md-8">
+              <span>Winners: </span>
+              <span class="top__win">...</span>
+            </div>
+            <div class="top__right col-md-4 text-right">
+              <button type="button" class="top__btn" disabled>New winner</button>
+              <button type="button" class="top__lottery" disabled>New lottery</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="start__wrap">
+        <div class="container">
+          <div class="start__inner">
+            <h6 class="text-center">Registration form</h6>
+            <form name="vform">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="myname">
+                <div id="myname_error" class="val__error"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="surname">Surname</label>
+                <input type="text" class="form-control" id="surname" name="surname">
+                <div id="surname_error" class="val__error"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" name="email">
+                <div id="email_error" class="val__error"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="phone" class="form-control" id="phone">
+              </div>
+
+              <div class="text-right">
+                <button type="submit" id="start__submit" class="btn text-right">Save</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="table__wrap">
+        <div class="container">
+          <div class="table-responsive">
+            <table id="mytable" class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                </tr>
+              </thead>
+              <tbody class="table__tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Scripts -->
+
+     <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.top__wrap {
+  margin: 3em 0; }
+
+.top__inner {
+  border: 1px solid lightgray;
+  padding: .5em 0; }
+
+.top__win {
+  color: blue; }
+
+.top__green {
+  color: green; }
+
+html {
+  font-family: 'PT Serif', serif; }
+
+p {
+  margin: 0; }
+
+.page__wrap {
+  max-width: 800px;
+  margin: 0 auto; }
+
+.error-text {
+  color: red;
+  font-size: 1.1em; }
+
+.error {
+  border: 1px solid red; }
+
+.val__error {
+  color: red; }
+
+.start__inner {
+  border: 1px solid lightgray;
+  padding: 2em; }
+
+.table__wrap {
+  margin: 3em 0; }
+
+.table__wrap tbody tr td input {
+  width: 100%; }
